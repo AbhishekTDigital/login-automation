@@ -14,7 +14,7 @@
   <url>http://www.example.com</url>
 
  <properties>
-    <tools-systemPath>${env.TOOLS_PATH}</tools-systemPath>
+   <!-- <tools-systemPath>${env.TOOLS_PATH}</tools-systemPath> -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
     <maven.compiler.source>1.7</maven.compiler.source>
@@ -115,13 +115,13 @@
 
 
 		<!-- https://mvnrepository.com/artifact/com.sun/tools -->
-		<dependency>
+	<!--	<dependency>
 		    <groupId>com.sun</groupId>
 		    <artifactId>tools</artifactId>
 		    <version>1.5.0</version>
 		    <scope>system</scope>
-		    <systemPath>${tools-systemPath}</systemPath> <!-- Use environment variable for absolute path -->
-		</dependency>
+		    <systemPath>${tools-systemPath}</systemPath>
+		</dependency> -->
 
 		
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
