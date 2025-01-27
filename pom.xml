@@ -13,15 +13,13 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <properties>
-    <tools-systemPath46>C:\Program Files\Java\jdk-22\lib\tools-1.5.0.jar</tools-systemPath46>
-	<!--  	<tools-systemPath>C:\Program Files\Java\jdk-22\lib\tools-1.5.0.jar</tools-systemPath>  -->
-<!--	<tools-systemPath>${env.JAVA_HOME}/lib/tools-1.5.0.jar</tools-systemPath> -->
+ <properties>
+    <tools-systemPath>C:\Program Files\Java\jdk-22\lib\tools-1.5.0.jar</tools-systemPath> <!-- Correct property name -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
     <maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
+    <maven.compiler.target>1.7</maven.compiler.target>
+</properties>
 
   <dependencyManagement>
     <dependencies>
