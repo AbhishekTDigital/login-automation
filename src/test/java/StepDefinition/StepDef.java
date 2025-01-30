@@ -147,7 +147,7 @@ public class StepDef extends BaseClass
 	/////////////////Verify Login Page Logo////////////
 	@Then("Verify Page Logo")
 	public void verify_page_logo() {
-		 WebElement logo = driver.findElement(By.xpath("//pf-image[@class='sc-gTRrQi kDtyhN hydrated']")); // Replace with actual ID or other locator
+		 WebElement logo = driver.findElement(By.xpath("(//link[@href='https://i.ibb.co/XDjSrGn/at-t-logo-brandlogos-net-57cuk.png'])[1]")); // Replace with actual ID or other locator
 
             // Verify logo presence
             if (logo.isDisplayed()) {
