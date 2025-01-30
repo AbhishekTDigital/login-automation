@@ -117,7 +117,7 @@
       <artifactId>tools</artifactId>
       <version>1.5.0</version>
       <scope>system</scope>
-      <systemPath>${java.home}/lib/tools.jar</systemPath> <!-- This is adjusted to work with Java 8 -->
+      <systemPath>${java.home}/lib/tools.jar</systemPath> 
     </dependency> -->
 
     <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
@@ -158,20 +158,20 @@
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+ <!--   <pluginManagement> -->
       <plugins>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.3.0</version> <!-- Ensure to use the latest version -->
+          <version>3.3.0</version> 
           <configuration>
             <useModulePath>false</useModulePath>
             <includes>
-              <include>**/*Run.java</include> <!-- Make sure the test pattern matches your test classes -->
+              <include>**/*Run.java</include> 
             </includes>
           </configuration>
         </plugin>
       </plugins>
-    </pluginManagement>
+ <!--   </pluginManagement> -->
   </build>
 </project>
