@@ -13,12 +13,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <!-- Set Java version to 8 to ensure tools.jar is available -->
-    <maven.compiler.release>1.8</maven.compiler.release> <!-- Java 8 -->
-    <maven.compiler.source>1.8</maven.compiler.source> <!-- Java 8 -->
-    <maven.compiler.target>1.8</maven.compiler.target> <!-- Java 8 -->
+    <maven.compiler.release>22</maven.compiler.release> <!-- Java 8 -->
+    <maven.compiler.source>22</maven.compiler.source> <!-- Java 8 -->
+    <maven.compiler.target>22</maven.compiler.target> <!-- Java 8 -->
   </properties>
 
-  <dependencyManagement>
+<!--  <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>org.junit</groupId>
@@ -28,7 +28,7 @@
         <scope>import</scope>
       </dependency>
     </dependencies>
-  </dependencyManagement>
+  </dependencyManagement> -->
 
   <dependencies>
     <!--  parameterized tests support -->
@@ -46,12 +46,12 @@
     </dependency>
 
     <!-- https://mvnrepository.com/artifact/net.sourceforge.cobertura/cobertura -->
-    <dependency>
+<!--    <dependency>
       <groupId>net.sourceforge.cobertura</groupId>
       <artifactId>cobertura</artifactId>
       <version>2.1.1</version>
       <scope>test</scope>
-    </dependency>
+    </dependency> -->
     
     <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
     <dependency>
@@ -112,13 +112,13 @@
 
     <!-- https://mvnrepository.com/artifact/com.sun/tools -->
     <!-- Adjusting tools.jar dependency for Java 8 -->
-    <dependency>
+ <!--   <dependency>
       <groupId>com.sun</groupId>
       <artifactId>tools</artifactId>
       <version>1.5.0</version>
       <scope>system</scope>
       <systemPath>${java.home}/lib/tools.jar</systemPath> <!-- This is adjusted to work with Java 8 -->
-    </dependency>
+    </dependency> -->
 
     <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
     <dependency>
