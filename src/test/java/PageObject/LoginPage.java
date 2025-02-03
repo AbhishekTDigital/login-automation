@@ -29,7 +29,7 @@ public class LoginPage
 	@FindBy(xpath="//input[@title='Allow']")
 	WebElement allowAccessBtn;
 	
-	@FindBy(xpath="//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-i29csa']")
+	@FindBy(xpath="//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-i29csa.']")
 	WebElement userIcon;
 	
 	@FindBy(xpath="//button[text()='Sign Out']")
